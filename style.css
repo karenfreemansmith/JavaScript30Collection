@@ -1,8 +1,20 @@
-
+body {
+  background: url("drums.jpg") no-repeat fixed center;
+  background-size: cover;
+}
 
 kbd {
   display: block;
   font-size: 40px;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.keys {
+  width: 780px;
+  margin: 20% auto;
 }
 
 .key {
