@@ -9,7 +9,7 @@ Sample of manipulating CSS variables with JavaScript by following tutorial at [J
 HTML, CSS, JavaScript
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith/github.i0/JS30-Day03-CSSVariables)
+* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day03-CSSVariables)
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
