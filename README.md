@@ -1,4 +1,4 @@
-# JavaScript Array Functions
+# Array Cardio 2
 version 0.0.0
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
@@ -9,17 +9,19 @@ Sample code for using various Array methods with JavaScript by following tutoria
 JavaScript
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day04-JSArrays)
+* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day07-ArrayCardio2/)
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
 ## Specifications
 Shows sample functions for:
-* .sort()
-* .map()
-* .filter()
-* .reduce()
+* .some()
+* .every()
+* .find()
+* .findIndex()
+* .splice()
+* .slice()
 
 ## Known Issues
 * one exercise is commented out, code needs to be run in the console on the Wikipedia page referenced.
