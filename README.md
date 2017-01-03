@@ -1,4 +1,4 @@
-# Flexb Panels
+# Flex Gallery
 version 0.0.0 - January 2, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
@@ -9,7 +9,7 @@ Sample code for createing flex panels with JavaScript by following tutorial at [
 CSS (flexbox), JavaScript
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day05-FlexPanels)
+* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day05-FlexGallery)
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
