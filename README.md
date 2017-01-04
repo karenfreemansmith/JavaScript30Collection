@@ -1,4 +1,4 @@
-# AJAX Type Ahead
+# HTML5 Canvas
 version 0.0.0, January 4, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
