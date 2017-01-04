@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  float:left;
+}
+
+div.canvas {
+  width: 80%;
+}
+
+div.options {
+  width: 20%;
+}
+
+canvas {
+  background: whitesmoke;
+  display: block;
+  margin: auto;
+}
