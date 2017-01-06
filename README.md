@@ -3,7 +3,7 @@ version 0.0.0, January 6, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ## Description
-Creating a simple drawing app with HTML5 canvas and JavaScript by following tutorial at [JavaScript30](https://github.com/wesbos/JavaScript30)
+Making checkboxes multi-selectable with the shift key using JavaScript by following tutorial at [JavaScript30](https://github.com/wesbos/JavaScript30)
 
 ### Technologies Used
 JavaScript
