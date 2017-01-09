@@ -28,25 +28,38 @@ function updateRange() {
   video[this.name] = this.value;
 }
 
+function showFullScreen() {
+  video.requestFullscreen();
+}
+
 function handleProgress() {
   const percent = (video.currentTime/video.duration) * 100;
   progressBar.style.flexBasis = `${percent}%`;
 }
 
 function scrub(e) {
-  const scrubTime = (e.offsetX/progress.width) * video.duration;
+  const scrubTime = (e.offsetX/progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
-  console.log(e);
 }
 
 // hook up event listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
+fullScreen.addEventListener('click', showFullScreen);
 video.addEventListener('timeupdate', handleProgress);
 
 toggle.addEventListener('click', togglePlay);
 
 skipButtons.forEach(button => button.addEventListener('click', skip));
 ranges.forEach(range => range.addEventListener('change', updateRange));
+
+let mousedown = false;
 progress.addEventListener('click', scrub);
+progress.addEventListener('mousemove', () => {
+  if(mousedown) {
+    scrub
+  }
+});
+progress.addEventListener('mousedown', () => mousedown=true);
+progress.addEventListener('mousedown', () => mousedown=false);
