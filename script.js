@@ -1,9 +1,11 @@
 // get elements
+//const fsVideo = document.getElementById('#fsVideo');
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
+const fullScreen = player.querySelector('.fullscreen');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
@@ -29,7 +31,17 @@ function updateRange() {
 }
 
 function showFullScreen() {
-  video.requestFullscreen();
+  //video.requestFullscreen();
+  elem = video;
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  }
 }
 
 function handleProgress() {
