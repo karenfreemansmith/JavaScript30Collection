@@ -38,8 +38,9 @@ function toggleDone(e) {
 }
 
 function removeAll(e) {
-  localStorage.clear();
+  items.splice(0);
   itemsList.innerHTML = "";
+  localStorage.clear();
 }
 
 addItems.addEventListener("submit", addItem);
