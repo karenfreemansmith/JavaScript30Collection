@@ -12,7 +12,8 @@ function addItem(e) {
   items.push(item);
   populateList(items, itemsList);
   localStorage.setItem("items", JSON.stringify(items));
-  this.reset();
+  (this.querySelector('[name=item]')).value="";
+  //this.reset();
 }
 
 function populateList(plates=[], platesList) {
@@ -36,7 +37,13 @@ function toggleDone(e) {
   populateList(items, itemsList);
 }
 
+function removeAll(e) {
+  localStorage.clear();
+  itemsList.innerHTML = "";
+}
+
 addItems.addEventListener("submit", addItem);
+addItems.addEventListener("reset", removeAll);
 itemsList.addEventListener("click", toggleDone);
 
 populateList(items, itemsList);
