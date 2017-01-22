@@ -27,5 +27,16 @@ function populateList(plates=[], platesList) {
   }).join('');
 }
 
+function toggleDone(e) {
+  if(!e.target.matches('input')) return;
+  const element = e.target;
+  const index = element.dataset.index;
+  items[index].done = !items[index].done;
+  localStorage.setItem('items', JSON.stringify(items));
+  populateList(items, itemsList);
+}
+
 addItems.addEventListener("submit", addItem);
+itemsList.addEventListener("click", toggleDone);
+
 populateList(items, itemsList);

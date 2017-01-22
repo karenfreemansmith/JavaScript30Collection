@@ -1,9 +1,9 @@
 # Local Storage
-version 0.0.0, January 18, 2017
+version 0.0.0, January 21, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ## Description
-... using JavaScript by following tutorial at [JavaScript30](https://github.com/wesbos/JavaScript30)
+Persist form data by using local storage using JavaScript by following tutorial at [JavaScript30](https://github.com/wesbos/JavaScript30)
 
 ### Technologies Used
 JavaScript
@@ -15,7 +15,8 @@ JavaScript
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
 ## Specifications
-* ...
+* Can add items to menu
+* Items on menu will still display after page refresh
 
 ## Known Issues
 * n/a
