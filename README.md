@@ -1,22 +1,21 @@
-# Local Storage
+# Mouse Shadow
 version 0.0.0, January 22, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ## Description
-  Text shadow follows mouse using JavaScript by following tutorial at [JavaScript30](https://github.com/wesbos/JavaScript30)
+  Make text shadow follow mouse with using JavaScript by following tutorial at [JavaScript30](https://github.com/wesbos/JavaScript30)
 
 ### Technologies Used
 JavaScript
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day16-TextShadow)
+* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day16-MouseShadow)
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
 ## Specifications
 * Text-shadow changes as mouse moves
-* On mobile/phone text-shadow responds to tilting phone
 
 ## Known Issues
 * n/a
