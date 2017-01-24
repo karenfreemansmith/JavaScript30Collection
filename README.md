@@ -9,7 +9,7 @@ by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 JavaScript
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day17-NoArticleSort)
+* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day17-NoArticleSort/)
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
