@@ -4,7 +4,31 @@ const ctx = canvas.getContext('2d');
 const strip = document.querySelector('.strip');
 const snap = document.querySelector('.snap');
 
+const levels = {};
+function updateLevels() {
+  document.querySelectorAll('.rgb input').forEach((input) => {
+    levels[input.name] = input.value;
+  });
+}
+
+const filters = {};
+function updateFilters() {
+  document.querySelectorAll('.filters input').forEach((input) => {
+    filters[input.name] = input.value;
+  });
+}
+
+const offsets = {};
+function updateOffset() {
+  document.querySelectorAll('.offset input').forEach((input) => {
+    offsets[input.name] = input.value;
+  });
+}
+
 function getVideo() {
+  updateFilters();
+  updateOffset();
+  
   navigator.mediaDevices.getUserMedia({ video: true, audio: false})
     .then(localMediaStream => {
       video.src = window.URL.createObjectURL(localMediaStream);
@@ -24,10 +48,10 @@ function paintToCanvas() {
   return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
     let pixels = ctx.getImageData(0,0,width,height);
-    pixels = colorEffects(pixels);
-    pixels = rgbSplit(pixels);
+    pixels = colorEffects(pixels, filters);
+    pixels = rgbSplit(pixels, offsets);
     if(document.querySelector('h3 input').checked==true) {
-      pixels = greenScreen(pixels);
+      pixels = greenScreen(pixels, levels);
     }
     ctx.putImageData(pixels, 0,0);
   }, 16);
@@ -45,11 +69,7 @@ function takePhoto() {
   strip.insertBefore(link, strip.firstChild);
 }
 
-function colorEffects(pixels) {
-  const filters = {};
-  document.querySelectorAll('.filters input').forEach((input) => {
-    filters[input.name] = input.value;
-  });
+function colorEffects(pixels, filters) {
 
   for(let i=0; i<pixels.data.length; i+=4) {
     pixels.data[i+0] = pixels.data[i+0] + parseInt(filters.redfilter); //RED
@@ -59,11 +79,7 @@ function colorEffects(pixels) {
   return pixels;
 }
 
-function rgbSplit(pixels) {
-  const offsets = {};
-  document.querySelectorAll('.offset input').forEach((input) => {
-    offsets[input.name] = input.value;
-  });
+function rgbSplit(pixels, offsets) {
 
   for(let i=0; i<pixels.data.length; i+=4) {
     pixels.data[i-parseInt(offsets.split)/2] = pixels.data[i+0]; //RED
@@ -73,12 +89,7 @@ function rgbSplit(pixels) {
   return pixels;
 }
 
-function greenScreen(pixels) {
-  const levels = {};
-
-  document.querySelectorAll('.rgb input').forEach((input) => {
-    levels[input.name] = input.value;
-  });
+function greenScreen(pixels, levels) {
 
   for(let i=0; i<pixels.data.length; i+=4) {
     red = pixels.data[i+0];
@@ -101,3 +112,12 @@ function greenScreen(pixels) {
 getVideo();
 
 video.addEventListener('canplay', paintToCanvas);
+document.querySelectorAll('.offset input').forEach((input) => {
+  input.addEventListener('change', updateOffset);
+});
+document.querySelectorAll('.filters input').forEach((input) => {
+  input.addEventListener('change', updateFilters);
+});
+document.querySelectorAll('.rgb input').forEach((input) => {
+  input.addEventListener('change', updateLevels);
+});
