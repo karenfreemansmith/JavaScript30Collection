@@ -11,6 +11,10 @@ html {
   background:#ffc600;
 }
 
+h1 {
+  text-align: center;
+}
+
 .photobooth {
   background:white;
   max-width:150rem;
@@ -25,13 +29,17 @@ html {
   clear: both;
 }
 
-.photo {
+.controls {
+  width: 240px;
+  float: right;
+}
 
-  float:left;
+.photo {
+  max-width: 75%;
+  float: left;
 }
 
 .player {
-  position: absolute;
   top:20px;
   right: 20px;
   width:200px;
