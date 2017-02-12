@@ -1,0 +1,41 @@
+body {
+  font-family: Ariel, sans-serif;
+  font-size: 1em;
+  color: #333;
+  margin: 2% 10%;
+  background: yellow; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(145deg,red,orange,yellow,green,blue,indigo,violet); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(145deg,red,orange,yellow,green,blue,indigo,violet); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(145deg,red,orange,yellow,green,blue,indigo,violet); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(145deg,red,orange,yellow,green,blue,indigo,violet); /* Standard syntax */
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 1px;
+}
+a:hover {
+  font-size: 1.1em;
+  color: #000;
+}
+
+.highlight {
+  transition: all 0.2s;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top:0;
+  background: white;
+  left:0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
