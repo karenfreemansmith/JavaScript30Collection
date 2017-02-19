@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS30 Tutorial: Speech Synthesis</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="voiceinator">
+      <h1>JS30 Tutorial: Speech Synthesis</h1>
+
+      <select name="voice" id="voices">
+        <option value="">Select a Voice</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+      <label for="pitch">Pitch:</label>
+      <input name="pitch" type="range" min="0" max="2" step="0.1">
+      <textarea name="text">Hello! I love Java Script</textarea>
+      <button id="stop">Stop!</button>
+      <button id="speak">Speak</button>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
