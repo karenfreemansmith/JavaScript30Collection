@@ -1,5 +1,5 @@
 # Speech Synthesis
-version 0.0.0, February 19, 2017
+version 0.0.0, February 18, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ## Description
@@ -9,7 +9,7 @@ by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 JavaScript
 
 ## Setup/Installation
-* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day20-SpeechRecognition/)
+* [View on Github Pages](https://karenfreemansmith.github.io/JS30-Day23-SpeechSynthesis/)
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
