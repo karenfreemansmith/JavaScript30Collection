@@ -61,6 +61,18 @@ nav ul {
   display: block;
 }
 
+.trigger-enter .dropdown1 {
+  left: -200px;
+}
+
+.trigger-enter .courses {
+  left: -90px;
+}
+
+.trigger-enter .dropdown3 {
+  left: -20px;
+}
+
 .trigger-enter-active .dropdown {
   opacity: 1;
 }
