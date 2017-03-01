@@ -1,5 +1,5 @@
 # Video Speed Controller UI
-version 0.0.0, February 28, 2017
+version 0.0.0, March 1, 2017
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
 
 ## Description
