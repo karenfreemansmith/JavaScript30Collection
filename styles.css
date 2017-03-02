@@ -7,25 +7,30 @@
    box-sizing: inherit;
  }
 
- body {
-   padding: 0;
-   margin:0;
-   font-family: 'Amatic SC', cursive;
- }
+body {
+ padding: 0;
+ margin:0;
+ font-family: 'Amatic SC', cursive;
+}
 
- h1 {
-   text-align: center;
-   font-size: 4rem;
-   line-height:1;
-   margin-bottom: 0;
- }
+h1 {
+ text-align: center;
+ font-size: 4rem;
+ line-height:1;
+ margin-bottom: 0;
+}
 
- .score {
-   background:rgba(255,255,255,0.2);
-   padding:0 3rem;
-   line-height:1;
-   border-radius:1rem;
- }
+button {
+  float: right;
+  margin-right: 25px;
+}
+
+.score {
+ background:rgba(255,255,255,0.2);
+ padding:0 3rem;
+ line-height:1;
+ border-radius:1rem;
+}
 
  .game {
    width:600px;

@@ -40,6 +40,9 @@ function startGame() {
 
 function bonk(e) {
   if(!e.isTrusted) return; //to prevent cheating
+  // apparently you can also click on the invisible mole,
+  // or click more than once while it's "up"
+  // if classList.contains('up') did not help...
   score++;
   this.classList.remove('up');
   scoreboard.textContent = score;
