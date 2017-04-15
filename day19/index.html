@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webcam Fun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Webcam Fun</h1>
+  <div class="photobooth">
+    <div class="ouput">
+      <div class="strip"></div>
+      <canvas class="photo"></canvas>
+    </div>
+    <div class="controls">
+      <video class="player"></video>
+      <button onClick="takePhoto()">Take Photo</button>
+
+      <h3>Color Filters</h3>
+        <div class="filters">
+          <label for="redfilter">Red:</label>
+          <input type="range" min=-255 max=255 name="redfilter">
+          <br>
+          <label for="greenfilter">Green:</label>
+          <input type="range" min=-255 max=255 name="greenfilter">
+          <br>
+          <label for="bluefilter">Blue:</label>
+          <input type="range" min=-255 max=255 name="bluefilter">
+        </div>
+
+      <h3>RGB Split</h3>
+        <div class="offset">
+          <label for="split">Offset:</label>
+          <input type="range" min=0 max=320 name="split">
+        </div>
+
+      <h3><input type="checkbox" checked>Green Screen Effect</h3>
+      (<em>turn off green screen to speed up page response</em>)
+       <div class="rgb">
+        <label for="rmin">Red Min:</label>
+        <input type="range" min=0 max=255 name="rmin">
+          <br>
+        <label for="rmax">Red Max:</label>
+        <input type="range" min=0 max=255 name="rmax">
+
+        <br>
+
+        <label for="gmin">Green Min:</label>
+        <input type="range" min=0 max=255 name="gmin">
+          <br>
+        <label for="gmax">Green Max:</label>
+        <input type="range" min=0 max=255 name="gmax">
+
+        <br>
+
+        <label for="bmin">Blue Min:</label>
+        <input type="range" min=0 max=255 name="bmin">
+          <br>
+        <label for="bmax">Blue Max:</label>
+        <input type="range" min=0 max=255 name="bmax">
+      </div>
+    </div>
+  </div>
+
+  <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
