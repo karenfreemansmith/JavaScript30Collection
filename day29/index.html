@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS30 Tutorial: Countdown Timer (Day 29)</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+      <div class="timer">
+        <div class="timer_controls">
+          <button data-time="30" class="timer_button">30 Seconds</button>
+          <button data-time="180" class="timer_button">3 Minutes</button>
+          <button data-time="600" class="timer_button">10 Minutes</button>
+          <button data-time="1800" class="timer_button">30 Minutes</button>
+          <button data-time="2700" class="timer_button">45 Minutes</button>
+          <button data-time="3600" class="timer_button">Lunch(1 hr)</button>
+          <form name="customForm" id="custom">
+            <input type="text" name="minutes" placeholder="Enter Minutes">
+          </form>
+        </div>
+        <div class="display">
+          <h1 class="display_time-left"></h1>
+          <p class="display_end-time"></p>
+        </div>
+      </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
