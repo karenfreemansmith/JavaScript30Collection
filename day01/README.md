@@ -1,7 +1,3 @@
-
-# JavaScript30Collection
-Combining Projects from JavaScript30 course.
-
 # Drum Kit
 version 0.0.0
 by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
