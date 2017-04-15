@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      font-size: 5em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+  </style>
+
+</head>
+<body>
+  <h2>Press a key to see the keycode:</h2>
+  <h1 id="code"></h1>
+  <h2 id="key"></h2>
+  <script>
+      window.addEventListener('keydown', function(e) {
+        document.getElementById("code").innerHTML = e.keyCode;
+        document.getElementById("key").innerHTML = "("+ e.key +")";
+      });
+  </script>
+</body>
+</html>
