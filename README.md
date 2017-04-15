@@ -1,5 +1,5 @@
 
-# [JavaScript30Collection](https://karenfreemansmith.github.io/JavaScript30Collection)
+# [JavaScript30Collection](https://karenfreemansmith.github.io/JavaScript30Collection/)
 Combining Projects from JavaScript30 course.
 
 * [01](day01/README.md)
