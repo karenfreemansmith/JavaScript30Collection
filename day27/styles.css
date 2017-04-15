@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.wrap {
+  width: auto;
+  border:2px solid green;
+  height: 100%;
+}
+
+.items {
+  padding: 50px;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.09);
+  background: rgba(255, 255, 255, 0.1);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  position: relative;
+  perspective: 500px;
+}
+
+.items.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width: 200px;
+  height: 400px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-size: 75px;
+  color: black;
+  text-shadow: 0 0 5px rgba(0,0,0, 0.2);
+  padding: 10px;
+}
+
+.item1 { background: #ffffcc; }
+.item2 { background: #ccffcc; }
+.item3 { background: #ccffff; }
+.item4 { background: #ccccff; }
+.item5 { background: #ffccff; }
+.item6 { background: #ffcccc; }
+.item7 { background: #ccff99; }
+.item8 { background: #99ff99; }
+.item9 { background: #99ffcc; }
+.item10 { background: #66ffff; }
+.item11 { background: #66ccff; }
+.item12 { background: #99ccff; }
+.item13 { background: #cc99ff; }
+.item14 { background: #ff99ff; }
+.item15 { background: #ff99cc; }
+.item16 { background: #ff9999; }
+.item17 { background: #ffcc99; }
+.item18 { background: #ffff99; }
+.item19 { background: #ccff66; }
+.item20 { background: #66ff99; }
+.item21 { background: #00ffff; }
+.item22 { background: #3399ff; }
+.item23 { background: #9999ff; }
+.item24 { background: #ff66ff; }
+.item25 { background: #ff6699; }
+.item26 { background: #ff9966; }
+.item27 { background: #ffff66; }
+.item28 { background: #99ff33; }
+.item29 { background: #33cc33; }
+.item30 { background: #33cccc; }
+
+.item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
+.item:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
